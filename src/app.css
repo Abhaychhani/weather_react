@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.app{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg,rgb(73, 138, 223),rgb(79, 61, 184));
+    overflow:hidden ;
+}
