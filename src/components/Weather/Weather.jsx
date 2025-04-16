@@ -8,7 +8,7 @@ import { GiSunrise } from "react-icons/gi";
 import { GiSunset } from "react-icons/gi";
 
 import "./weather.css";
-import clear from "../../../public/clear.png";
+import clear from "/clear.png";
 function Weather() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -21,7 +21,7 @@ function Weather() {
     const options = {
       method: "GET",
       headers: {
-        "x-rapidapi-key": "a35153764bmsh77a746ba7aa80c8p10234djsn2a1669cade94",
+        "x-rapidapi-key": import.meta.env.VITE_RAPID_API_KEY,
         "x-rapidapi-host": "open-weather13.p.rapidapi.com",
       },
     };
